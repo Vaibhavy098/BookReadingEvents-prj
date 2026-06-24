@@ -30,3 +30,12 @@ jobs:
 
       - name: Test
         run: dotnet test "Source Code/BookReadingEvents/BookReadingEvents.slnx" --no-build
+
+      - name: Publish API
+        run: dotnet publish "Source Code/BookReadingEvents/BookReadingEvents.API/BookReadingEvents.API.csproj" -c Release -o publish
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BookReadingEvents-Publish
+          path: publish
