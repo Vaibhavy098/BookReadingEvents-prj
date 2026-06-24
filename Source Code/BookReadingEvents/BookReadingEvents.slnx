@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BookReadingEvents.API/BookReadingEvents.API.csproj" />
+  <Project Path="BookReadingEvents.Application/BookReadingEvents.Application.csproj" />
+  <Project Path="BookReadingEvents.Domain/BookReadingEvents.Domain.csproj" />
+  <Project Path="BookReadingEvents.Infrastructure/BookReadingEvents.Infrastructure.csproj" />
+  <Project Path="BookReadingEvents.Tests/BookReadingEvents.Tests.csproj" />
+</Solution>
