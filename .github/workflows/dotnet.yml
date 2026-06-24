@@ -39,3 +39,10 @@ jobs:
         with:
           name: BookReadingEvents-Publish
           path: publish
+
+      - name: Deploy to Azure App Service
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: bookreadingevents-vaibhav
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: publish
