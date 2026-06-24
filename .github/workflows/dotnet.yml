@@ -23,10 +23,10 @@ jobs:
           dotnet-version: "10.0.x"
 
       - name: Restore
-        run: dotnet restore
+  run: dotnet restore "Source Code/BookReadingEvents/BookReadingEvents.slnx"
 
-      - name: Build
-        run: dotnet build --no-restore
+- name: Build
+  run: dotnet build "Source Code/BookReadingEvents/BookReadingEvents.slnx" --no-restore
 
-      - name: Test
-        run: dotnet test --no-build
+- name: Test
+  run: dotnet test "Source Code/BookReadingEvents/BookReadingEvents.slnx" --no-build
